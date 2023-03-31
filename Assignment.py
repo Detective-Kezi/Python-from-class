@@ -1,4 +1,4 @@
-"""import math
+import math
 def hyp(adj, opp):
     hyp = math.sqrt(adj**2 + opp**2)
     print(hyp)
@@ -117,12 +117,4 @@ def cart(s1, s2):
 
 
 cart(A, B)
-"""
 
-
-def pyramid(base):
-    for b in range(base + 1):
-        print(" " * (base - b), " *" * b)
-
-
-pyramid(10)

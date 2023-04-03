@@ -53,32 +53,44 @@ def pyramid(base):
 
 # Number Nine
 def factorial(x):
-        if x == 1:
-        	return 1
-        else:
-        	return (x * factorial(x-1))
+    if x == 1:
+        return 1
+    else:
+        return x * factorial(x - 1)
+
 
 # Number Ten
 def reverse_string(string):
-	new_string = string[::-1]
-	return new_string
+    new_string = string[::-1]
+    return new_string
+
 
 print(reverse_string("Hello World"))
 
 
 # Number Eleven
 def check_char(char, string):
-	if char in string:
-		return string.index(char)
-	else:
-		return -1
+    if char in string:
+        return string.index(char)
+    else:
+        return -1
+
 
 print(check_char("j", "Ice cream"))
 
+
 # Number Twelve
 def change_case(string):
-	upper_case = ["A", "B", "C", "D"]
-	lower_case = ["a", "b", "c", "d"]
-	for i in string:
-		if i in upper_case:
-			string.replace()
+    new_string = ""
+    upper_case = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    lower_case = "abcdefghijklmnopqrstuvwxyz"
+    for a in string:
+        if a in upper_case:
+            x = upper_case.index(a)
+            new_string += lower_case[x]
+        else:
+            new_string += string[string.index(a)]
+    return new_string
+
+
+print(change_case("HELLO WORLD 2023!"))
